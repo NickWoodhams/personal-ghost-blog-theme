@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{! Page Meta }}
+    {{#if posts}}
     <title>{{meta_title}}</title>
+    {{else}}
+    <title>{{meta_title}} | Nick Woodhams</title>
+    {{/if}}
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
